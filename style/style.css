@@ -1,0 +1,16 @@
+body{
+    background-color: #35281f;
+    color:#a4c5a6;
+}
+
+h1,h2{
+    color: #cfbaa7;
+}
+.container{
+    width:70%;
+    margin:auto;
+    background-color: #0d3211;
+}
+img{
+    opacity: 0.7;
+}
