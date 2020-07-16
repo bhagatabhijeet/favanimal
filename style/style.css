@@ -18,6 +18,10 @@ img{
     margin: auto;
 }
 footer{
-    background-color: black;
-    align-content: center;
+    background-color: black;  
+    text-align: center;  
+}
+
+footer p{
+    margin:auto;
 }
