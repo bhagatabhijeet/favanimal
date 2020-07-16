@@ -28,13 +28,45 @@ p{
     position: relative;
 }
 
+span{
+    color:red;
+    position:absolute;
+    top:80px;
+    right:185px;
+    display: none;
+    font-size: larger;
+}
+
 #heart-image{
     width:40px;
     height:40px;
     position:absolute;
     top:100px;
-    right:200px;    
+    right:200px;  
+    transition: width,height;  
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+  }
+
+#heart-image:hover {
+    width: 60px;
+    height: 60px;       
 }
+#heart-image:hover + span {    
+    display: inline-block;  
+    animation-name: changecolors;
+    animation-duration: 4000ms;
+    animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+@keyframes changecolors{
+    0%{color:blue}
+    25%{color:yellow}
+    50%{color:green}
+    75%{color: olive;}
+    100%{color: red;}
+}
+
 #main-image{
     width:100%;
     height: 400px; 
