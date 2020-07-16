@@ -55,15 +55,16 @@ span{
 #heart-image:hover + span {    
     display: inline-block;  
     animation-name: changecolors;
-    animation-duration: 4000ms;
+    animation-duration: 500ms;
     animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    animation-iteration-count: infinite;
 }
 
 @keyframes changecolors{
     0%{color:blue}
     25%{color:yellow}
     50%{color:green}
-    75%{color: olive;}
+    75%{color: wheat;}
     100%{color: red;}
 }
 
