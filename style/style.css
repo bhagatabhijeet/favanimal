@@ -1,5 +1,24 @@
 body{    
-    background-color: #f1f1f1;     
+    background-color: #f1f1f1;  
+}
+body:before{
+    content: ' ';
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;  
+    opacity: 0.1;
+    background-image: url("../Assets/dogsbg.png"); 
+    background-repeat: round;
+    /* background-position: 50% 0; */
+    /* -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover; */
+    /* background-size: cover; */
+    
 }
 
 h1{
@@ -71,7 +90,7 @@ span{
 #main-image{
     width:100%;
     height: 400px; 
-    margin: auto;   
+    margin: auto;      
 }
 footer{
     background-color: black;  
